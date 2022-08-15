@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>CoolMine Coin Selection Page</title>
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<link href="assets/plugins/chartist/chartist.css" rel="stylesheet" />
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/icons.css" />
+	<link rel="stylesheet" href="assets/css/app.css" />
+</head>
+
+<body class="bg-theme bg-theme8">
+	<div class="wrapper">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+					<div class="d-none d-lg-flex">
+						<img src="assets/images/logo-icon.png" class="logo-icon-2" alt="" />
+					</div>
+					<div>
+						<h4 class="d-none d-lg-flex logo-text text-info">COOL<span class="text-white"></span><span class="text-info">MINE</span></h4>
+					</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					
+					<li class="nav-item active"><a class="nav-link" href="https://etc.cool2mine.com/" target='_blank'><span class="text-success">ETC</span> Pool</a></li>
+					<li class="nav-item active"><a class="nav-link" href="https://cool2mine.com/" target='_blank'><span class="text-success">RVN</span> Pool</a></li>
+					
+				</ul>
+			</div>
+		</nav>
+		<div class="container d-flex align-items-center justify-content-center">
+			<div class="card shadow-none bg-transparent">
+				<div class="card-body text-center">
+					<br><br><br><br><br><br>
+					<h1 class="display-4 mt-5">WELCOME TO <span class="text-info">COOL</span><span class="text-white"></span><span class="text-info">MINE</span></h1>
+					<h2><p>CHOOSE POOL AND START MINING</p></h2>
+				</div>
+			</div>
+		</div>
+	
+					<div class="col-12 col-lg-4">
+						<div class="user-profile-page">
+							<div class="card radius-15 b-1">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-12 col-lg-6 border-right">
+											<div class="d-md-flex align-items-center">
+												<div class="mb-md-0 mb-3">
+													<a href="http://etc.cool2mine.com/" target='_blank'>
+														<img src="assets/images/etc.png" class="rounded-circle shadow" width="128" height="128" alt="etcpool" />
+													</a>
+												</div>
+												<div class="ml-md-4 flex-grow-1">
+													<div class="d-flex align-items-center mb-1">
+														<h4 class="mb-0">ETH CLASSIC</h4>
+													</div>
+													<p class="mb-0">Ticker: ETC</p>
+													<p class="mb-0">Algorithm: Etchash</p>
+													<p class="mb-0"><a href="https://ethereumclassic.org/" target='_blank'><i class='bx bx-world'></i> ETC Website</a></p>
+													<p class="mb-0"><a href="https://github.com/ethereumclassic" target='_blank'><i class='bx bxl-github'></i> ETC Github</a></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-6">
+											<table class="table table-sm table-borderless table-striped mt-md-0 mt-3">
+												<tbody>
+													<tr>
+														<th>Block Reward (Coin):</th>
+														<td id="lastBlockRewardEtc"></td>
+													</tr>
+													<tr>
+														<th>Block Reward (USD):</th>
+														<td id="blockEtcToUSD"></td>
+													</tr>
+													<tr>
+														<th>Genesis Date:</th>
+														<td id="genesisDateEtc"></td>
+													</tr>
+													<tr>
+														<th>Market Cap Rank:</th>
+														<td id="marketCapEtc"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="user-profile-page">
+							<div class="card radius-15 b-1">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-12 col-lg-6 border-right">
+											<div class="d-md-flex align-items-center">
+												<div class="mb-md-0 mb-3">
+													<a href="http://cool2mine.com/" target='_blank'>
+														<img src="assets/images/rvn.png" class="rounded-circle shadow" width="128" height="128" alt="rvnpool" />
+													</a>
+												</div>
+												<div class="ml-md-4 flex-grow-1">
+													<div class="d-flex align-items-center mb-1">
+														<h4 class="mb-0">RAVENCOIN</h4>
+													</div>
+													<p class="mb-0">Ticker: RVN</p>
+													<p class="mb-0">Algorithm: Kawpow</p>
+													<p class="mb-0"><a href="https://getravencoin.org/" target='_blank'><i class='bx bx-world'></i> RVN Website</a></p>
+													<p class="mb-0"><a href="https://github.com/RavenProject" target='_blank'><i class='bx bxl-github'></i> RVN Github</a></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-6">
+											<table class="table table-sm table-borderless table-striped mt-md-0 mt-3">
+												<tbody>
+													<tr>
+														<th>Block Reward (Coin):</th>
+														<td id="lastBlockRewardRvn"></td>
+													</tr>
+													<tr>
+														<th>Block Reward (USD):</th>
+														<td id="blockRvnToUSD"></td>
+													</tr>
+													<tr>
+														<th>Genesis Date:</th>
+														<td id="genesisDateRvn"></td>
+													</tr>
+													<tr>
+														<th>Market Cap Rank:</th>
+														<td id="marketCapRvn"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+					
+					
+		<div class="bg-light p-4 fixed-bottom border-top">
+			<div class="d-flex align-items-center justify-content-between flex-wrap">
+				<ul class="list-inline mb-0">
+					<li class="list-inline-item">Follow Us :</li>
+					
+					<li class="list-inline-item"><a href="https://t.me/" target='_blank'><i class='bx bxl-telegram mr-1'></i>Telegram</a></li>
+					<li class="list-inline-item"><a href="https://twitter.com/" target='_blank'><i class='bx bxl-twitter mr-1'></i>Twitter</a></li>
+					<li class="list-inline-item"><a href="https://www.facebook.com/" target='_blank'><i class='bx bxl-facebook mr-1'></i>Facebook</a></li>
+				</ul>
+				<p class="mb-0">CoolMINE @2021 | Developed By : <a href="index.html">CoolMine</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/home.js"></script>
+	<script src="assets/plugins/webticker/jquery.webticker.min.js"></script>
+	<script src="assets/plugins/chartist/chartist.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			loadHomePage();
+		});
+	</script>
+</body>
+
+
+
+</html>
