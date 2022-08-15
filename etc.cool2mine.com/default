@@ -1,0 +1,43 @@
+upstream api {
+        server 127.0.0.1:8080;
+}
+
+server {
+      root /var/www/etc.cool2mine.com;
+        index index.html index.html;
+
+        server_name etc.cool2mine.com ;
+
+        location /api {
+                proxy_pass http://127.0.0.1:8080/api;
+        }
+
+        location / {
+                try_files $uri $uri/ /index.html;
+        }
+
+
+
+   
+
+}
+
+server {
+      root /var/www/cool2mine.com;
+        index index.html index.html;
+
+        server_name cool2mine.com;
+
+        location /api {
+                proxy_pass http://127.0.0.1:30001/api;
+        }
+
+        location / {
+                try_files $uri $uri/ /index.html;
+        }
+
+
+
+   
+
+}
