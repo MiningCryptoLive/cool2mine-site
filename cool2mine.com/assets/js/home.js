@@ -1,8 +1,8 @@
 
 
-var WebURL         = "https://coolmine.com/";
-var API            = "https://coolmine.com/api/";
-var stratumAddress = "stratum+tcp://coolmine.com";
+var WebURL         = "https://doge.solopool.pro/";
+var API            = "https://doge.solopool.pro/api/";
+var stratumAddress = "stratum+tcp://doge.solopool.pro";
 var defaultPool = 'rvn'; 
 var currentPool = defaultPool;
 
